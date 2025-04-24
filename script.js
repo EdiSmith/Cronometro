@@ -14,6 +14,7 @@ reiniciar.addEventListener("click", novamente)
 
 let cont = 0
 
+
 function iniciar(){
 
     if (segundo.textContent >= 0 && segundo.textContent == 59) {

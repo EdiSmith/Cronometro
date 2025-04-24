@@ -5,27 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 
 </head>
 
 <body>
 
-    <h1>RELÓGIO</h1>
+    <div class="container">
+    
+        
+        <h1>CRONOMETRO.JS</h1>
 
-    <div id="relogio">
+        <div class="timer">
+            <div class="time" id="horas">00</div>
+            <div class="separator">:</div>
+            <div class="time" id="minutes">00</div>
+            <div class="separator">:</div>
+            <div class="time" id="segundos">00</div>
+            
+        </div>
 
-        <p id="hora">0:</p>
-        <p id="minuto">0:</p>
-        <p id="segundo">0</p>
+        <div class="button">
+            <button class="btn" id="startbtn">Iniciar</button>
+            <button class="btn" id="pausarbtn">Pausar</button>
+            <button class="btn" id="Continuarbtn">Continuar</button>
+            <button class="btn" id="resetbtn">Recomeçar</button>
+        </div>
+
+
 
     </div>
-
-    <button id="start">Iniciar</button>
-    <button id="stop">Parar</button>
-    <button id="resat">Reiniciar</button>
-
-
 
 
     <script src="./script.js"></script>

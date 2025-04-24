@@ -1,3 +1,73 @@
-#relogio{
+*{
+margin: 0;
+padding: 0;
+font-family: "Orbitron", sans-serif;
+
+}
+
+
+
+.container{
+    
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+    background-color: rgb(241, 241, 229);
+    height: 100vh;
+}
+.container h1{
+    color: rgb(52, 6, 255);
+
+}
+.timer{
+    display: flex;
+    font-size: 55px;
+    font-weight: bold;
+    color: black;
+    min-width: 90px
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: rgb(71, 70, 70);
+
+}
+
+.separator{
+    padding: 0 10px;
+    color: rgb(70, 66, 66);
+}
+
+.button {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.btn{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid rgb(49, 48, 48);
+    border-radius: 30px;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+
+}
+#startbtn {
+    background-color: rgb(52, 6, 255);
+    color: white;
+}
+
+
+#pausarbtn, #Continuarbtn {
+    display: none;
 }
