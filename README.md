@@ -21,5 +21,5 @@ JavaScript: Lógica de funcionamento do cronômetro (controle de tempo e interat
 Clone o repositório:
 
 Copiar código
-git clone https://github.com/seu-usuario/cronometro.js.git
+https://github.com/EdiSmith/Cronometro.git
 Abra o arquivo index.html no seu navegador para começar a usar o cronômetro.
