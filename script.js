@@ -1,62 +1,60 @@
-let comecar = document.getElementById("start")
-let parar = document.getElementById("stop")
-let reiniciar = document.getElementById("resat")
+let secondsE1 = document.getElementById("second")
+let minutesE1 = document.getElementById("minutes")
+let millisecondsE1 = document.getElementById("milliseconds")
+let startBtn = document.getElementById("startBtn")
+let pauseBtnE1 = document.getElementById("pauseBtn")
+let resetBtnE1 = document.getElementById("resetBtn")
 
 
-let hora = document.getElementById("hora")
-let minuto = document.getElementById("minuto")
-let segundo = document.getElementById("segundo")
 
+let interval = null;
+let seconds=0; 
+let milliseconds=0;
+let minutes = 0;
 
-comecar.addEventListener("click", iniciar)
-parar.addEventListener("click", fim)
-reiniciar.addEventListener("click", novamente)
+startBtn.addEventListener("click", startTimer)
+pauseBtnE1.addEventListener("click", fim)
+resetBtnE1.addEventListener("click", novamente)
 
-let cont = 0
+function startTimer(){
+   
+      interval = setInterval(() => {
+        milliseconds++;
 
+        if(milliseconds === 59){
+            seconds++;
+            milliseconds=0;
+        }
+     
+        if(seconds === 59){
+            minutes++;
+            seconds=0;
+        }
 
-function iniciar(){
+        millisecondsE1.textContent = milliseconds;
+        secondsE1.textContent = seconds;
+        minutesE1.textContent = minutes;
 
-    if (segundo.textContent >= 0 && segundo.textContent == 59) {
+      }, 1000);
+    }
 
-        cont = setInterval(() => {
+    function fim(){
 
-            segundo.textContent = parseInt(segundo.textContent) + 1
-                
-            }, 1000);
+        clearInterval(interval);
         
     }
 
-    if (minuto.textContent >=0 || minuto.textContent < 59) {
+    function novamente(){
 
-        cont = setInterval(() => {
 
-            minuto.textContent = parseInt(minuto.textContent) + 1
-                
-            }, 1000);
+        seconds=0; 
+        milliseconds=0;
+        minutes = 0;
+
+        millisecondsE1.textContent = 0;
+        secondsE1.textContent = 0;
+        minutesE1.textContent = 0;
         
+
     }
-
-    if (segundo.textContent >= 0 || segundo.textContent < 59) {
-
-        cont = setInterval(() => {
-
-            segundo.textContent = parseInt(segundo.textContent) + 1
-                
-            }, 1000);
-        
-    }
-
     
-
-
-}
-
-function fim(){
-
-   clearInterval(cont) 
-}
-
-function novamente(){
-    tempo.textContent = 0
-}

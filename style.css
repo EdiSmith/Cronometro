@@ -62,12 +62,8 @@ font-family: "Orbitron", sans-serif;
     transform: scale(1.1);
 
 }
-#startbtn {
+#startBtn {
     background-color: rgb(52, 6, 255);
     color: white;
 }
 
-
-#pausarbtn, #Continuarbtn {
-    display: none;
-}
