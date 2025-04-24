@@ -1,4 +1,4 @@
-#Cronômetro.js
+**Cronômetro.js**
  
 Cronômetro simples em JavaScript, HTML e CSS.
 Este projeto cria um cronômetro funcional com os controles de iniciar, pausar e reiniciar a contagem de minutos, segundos e milissegundos.
